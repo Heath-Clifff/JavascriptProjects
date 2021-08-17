@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #222;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 39px;
+}
+
+.container {
+  position: relative;
+  top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.3rem;
+  background-color: gray;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 4px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.box {
+  user-select: none;
+  background-color: #000;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  font-size: 30px;
+  background-color: #f0f0f0;
+  transform: rotateY(180deg);
+  transition: transform 0.4s ease-in-out;
+}
+
+.box img {
+  max-width: 95px;
+  visibility: hidden;
+}
+
+.box.flip {
+  transform: rotateY(0deg);
+}
+
+.box.flip img {
+  visibility: visible;
+  animation: visibility 0.4s linear forwards;
+}
+
+@keyframes visibility {
+  from {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
+button {
+  margin-top: 20px;
+  background-color: #3498db;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  color: rgb(9, 7, 20);
+}
+
+button:active {
+  transform: scale(0.98);
+}
