@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #3498db;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #f0f0f0;
+  padding: 30px 60px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.container p {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.add-to-do {
+  margin-bottom: 20px;
+}
+
+.add-to-do input {
+  width: 190px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.add-to-do button {
+  border: none;
+  margin-left: 10px;
+  background-color: #3498db;
+  padding: 5px 13px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.add-to-do form button:active {
+  transform: scale(0.98);
+}
+
+ol {
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+ol li {
+  margin-bottom: 15px;
+  cursor: default;
+  user-select: none;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+ol li:last-child {
+  margin-bottom: 0;
+}
+
+.option button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+}
+
+.option button:active {
+  transform: scale(0.98);
+}
+
+.option button:nth-of-type(1) {
+  background-color: #3498db;
+}
+
+.option button:nth-of-type(2) {
+  background-color: rgb(190, 72, 72);
+}
+
+.option button:nth-of-type(3) {
+  background-color: #8ddb34;
+}
